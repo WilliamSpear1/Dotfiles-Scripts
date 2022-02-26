@@ -125,3 +125,6 @@ if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
 fi
 alias tmux="TERM=screen-256color-bce tmux"
 alias config='/usr/bin/git/ --git-dir=/home/wilabeast/.cfg/ --work-tree=/home/wilabeast'
+alias v=vim
+alias config='/usr/bin/git --git-dir=/home/wilabeast/.cfg/ --work-tree=/home/wilabeast'
+alias config='/usr/bin/git --git-dir=/home/wilabeast/.cfg/ --work-tree=/home/wilabeast'
