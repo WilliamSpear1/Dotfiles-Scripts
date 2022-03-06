@@ -40,7 +40,9 @@ Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/syntastic'
 Plug 'vim-airline/vim-airline'
 Plug 'sainnhe/everforest'
+Plug 'arcticicestudio/nord-vim'
 call plug#end()
+
 colorscheme everforest
 set background=dark
 
