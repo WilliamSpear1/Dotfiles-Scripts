@@ -128,3 +128,10 @@ alias config='/usr/bin/git/ --git-dir=/home/wilabeast/.cfg/ --work-tree=/home/wi
 alias v=vim
 alias config='/usr/bin/git --git-dir=/home/wilabeast/.cfg/ --work-tree=/home/wilabeast'
 alias config='/usr/bin/git --git-dir=/home/wilabeast/.cfg/ --work-tree=/home/wilabeast'
+
+if [[ -f $HOME/Scripts/update.sh ]]; then
+    source ~/Scripts/update.sh
+fi
+
+alias update='source ./Scripts/update.sh'
+alias wifi='source ./Scripts/wifi_connect.sh'
