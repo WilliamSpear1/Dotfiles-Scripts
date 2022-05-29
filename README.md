@@ -31,7 +31,7 @@
     * i3
     * neofetch
     * picom
-#### Installation process for aforementioned Software
+### Installation process for aforementioned Software
 ##### Installation process varies depending on package manager(Specific to Linux)
 ##### This will detail the process on the Ubuntu Distro 
         * sudo apt-get install feh(Distros such as Ubuntu come with display software installed)
