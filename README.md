@@ -43,4 +43,4 @@
         * sudo apt-get install picom
         * Powerline-Shell
             -sudo apt-get install python3-pip
-            -pip install powerline-shell
+            -pip install  powerline-shell
