@@ -34,11 +34,13 @@
 #### Installation process for aforementioned Software
 ##### Installation process varies depending on package manager(Specific to Linux)
 ##### This will detail the process on the Ubuntu Distro 
-        * sudo apt-get install feh(Distros such as Ubuntu come with display software installed)
-        * sudo apt-get install vim(Distros such as Ubuntu come with vim as a default text editor
+        * sudo apt-get install feh (Distros such as Ubuntu come with display software installed)
+        * sudo apt-get install vim (Distros such as Ubuntu come with vim as a default text editor
         * Xorg is a display server most Distros come with display server installation mostly not necessary
-        * sudo apt-get install bash(Distros such as Ubuntu come with Bourne Again Shell as default shell)
+        * sudo apt-get install bashv(Distros such as Ubuntu come with Bourne Again Shell as default shell)
         * sudo apt-get install i3
-        * sudo apt-get neofetch
-        * sudo apt-get picom
-        * Powerline-Shell is more extensive installation method that will not be detailed in this documentation
+        * sudo apt-get nintall neofetch
+        * sudo apt-get install picom
+        * Powerline-Shell
+            -sudo apt-get install python3-pip
+            -pip install powerline-shell
