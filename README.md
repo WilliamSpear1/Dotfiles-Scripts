@@ -31,6 +31,7 @@
     * i3
     * neofetch
     * picom
+    * tpm
 #### Installation process for aforementioned Software
 ##### Installation process varies depending on package manager(Specific to Linux)
 ##### This will detail the process on the Ubuntu Distro 
@@ -44,3 +45,6 @@
         * Powerline-Shell
             -sudo apt-get install python3-pip
             -pip install  powerline-shell
+        * tpm
+            - git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+            - C-a I inside tmux
