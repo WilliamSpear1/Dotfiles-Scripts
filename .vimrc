@@ -41,9 +41,11 @@ Plug 'scrooloose/syntastic'
 Plug 'vim-airline/vim-airline'
 Plug 'sainnhe/everforest'
 Plug 'plasticboy/vim-markdown'
+Plug 'arcticicestudio/nord-vim'
+Plug 'sudar/vim-arduino-syntax'
 call plug#end()
 
-colorscheme everforest
+colorscheme nord 
 set background=dark
 
 "mapping

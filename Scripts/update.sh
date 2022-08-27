@@ -1,11 +1,11 @@
 #!/bin/sh
 # A bash script for updating and upgrading tool ########################################################
-read -p "Hello would you like to update your system at this time: " answer
+# Variables ############################################################################################
+log="/home/wilabeast/Logs/update.logs"
+time="$(date +"[%Y-%m-%d %H:%M:%S]")"
 
-if [[ $answer == "yes" ]]; then
-    echo "Starting update now..."
-    sudo pacman -Syyu
-    echo "Successfully updated System"
-fi
-
-echo "Thank you"
+echo "$time:Starting update and upgrade of packages\n" >> $log 
+yes | sudo pacman -Syyu >> $log
+yes | sudo pacman -Suy >> $log
+yes | sudo pacman -Sc >> $log
+echo "$time:Finished update and upgrade of packages\n" >> $log 
