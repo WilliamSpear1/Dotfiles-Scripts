@@ -4,7 +4,7 @@ import logging
 import os
 import sys
 from watchdog.observers import Observer
-from watchdog.events import FileSystemEventHandler
+from watchdog.events    import FileSystemEventHandler
 
 source_directory            = "/home/wilabeast/Downloads"
 destination_directory_image = "/home/wilabeast/Mountain-Wallpapers"

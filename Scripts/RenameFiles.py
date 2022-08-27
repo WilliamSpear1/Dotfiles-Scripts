@@ -29,6 +29,7 @@ def scan_dir(path):
                 rename(path, entry.name, Filename)
 
 if __name__ == "__main__":
+    logging.info ("Start of program")
     wallpaper_dir = "/home/wilabeast/Mountain-Wallpapers"
     scan_dir(wallpaper_dir)
     logging.info ("End of program")
