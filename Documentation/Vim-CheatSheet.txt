@@ -1,0 +1,108 @@
+// Command | Function //////////////////////////////////////////////////////////
+// File Management /////////////////////////////////////////////////////////////
+:w          Write file to disk
+Ctrl+g      Show file information
+ga          Show character information
+:q          Quit vi without saving file
+:wq         Write file to disk and quit vi
+:q! Ignore  Warning and discard changes
+:w filename Save the file as filename
+:r filename Read and insert filename
+
+// Navigation //////////////////////////////////////////////////////////////////
+h      Move cursor left
+l      Move cursor right
+j      Move cursor down one line
+2j     Move curor down 2 line
+k      Move cursor up 2 lines
+w      Jump to start of the next word(punctuation considered words)
+W      Jump to start of the next word(spaces separate words)
+e      Move to the end of the next  word(punctuation considered words)
+E      Move to the end of teh next word(no punctuation)
+b      Move backwards to start of current word
+B      Move backwards to start of current word(no punctuation)
+(      Move a sentence back
+)      Move a sentence forward
+{      Move a paragraph back
+}      Move a paragraph forward
+$      Move to end of a line
+^      Move to first non-blank character in line
+0      Move to start of line
+G      Move to last line of Document
+3G     Move to line 3.
+:n     Go to line n in document
+Ctrl+d Scroll down half a screen
+Ctrl+u Scroll up half a screen
+Ctrl+f Page forward
+Ctrl+b Page backward
+
+// Switching Modes /////////////////////////////////////////////////////////////
+i   Enter Insert mode
+v   Enter Visual mode
+Esc Return to normal mode from Insert and Visual mode
+
+// Insert/Append Text //////////////////////////////////////////////////////////
+i  Insert text before current cursor location
+I  Insert text at beginning of line
+a  Append the text after current cursor location
+A  Append text at end of the line
+o  Create new line for text below current cursor location
+O  Create new line for text above current cursor location
+ea Insert(append) at end of current word
+
+// Search And Replace Text /////////////////////////////////////////////////////
+/pattern              Search forward
+?pattern              Search backward 
+*                     Search forward for word under cursor 
+#                     Search forward for word under cursor
+r                     Replace single character at cursor position
+R                     Replace characters starting at cursor position
+cc                    Replace entire line
+:%s/search/replace/g  Replace every occurence of search with replace
+:%s/search/replace/gc Replace every occurence of search with replace with confirmation
+
+// Cut, Copy and Paste /////////////////////////////////////////////////////////
+x  Cut character under current cursor location
+X  Cut character before current cursor location
+dw Cut from current cursor location to next word
+D  Cut from current cursor location to end of current line
+dd Cut entire current line
+Y  Copy selected text
+yy Copy entire current line
+p  Paste text after cursor
+P  Paste text before cursor
+
+// Undo and Redo ///////////////////////////////////////////////////////////////
+u      Undo last change
+Ctrl+r Redo changes that were undone
+
+// Working with Multiple Files /////////////////////////////////////////////////
+:e filename Edit file in a new buffer
+:ls       List avaible buffers
+:bn       Move to next buffer
+:bp       Move to previous buffer
+:bfirst   Move to first buffer
+:blast    Move to last buffer
+Ctrl+ws   Split windows
+Ctrl+ww   Switch windows
+Ctrl+wq   Quit windows
+Ctrl+wv   Split windows vertically
+:tabnew   Create new tab
+gt,:tabn  Move to next tab
+gT,:tabp  Move to previous tab
+:tabfirst Move to first tab
+:tablast  Move to final tab
+#gt       Move to tab number #
+
+// Set Line Number /////////////////////////////////////////////////////////////
+:set number   Show line numbers
+:set nonumber Do not show line numbers
+
+// Visual Mode Commands ////////////////////////////////////////////////////////
+y Copy selected text
+d Delete selected text
+c Delete selected text and enter Insert mode
+> Increase indent
+< Decrease indent
+= Fix indentation of current line
+~ Change case
