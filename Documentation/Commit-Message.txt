@@ -1,0 +1,55 @@
+/////////////////////////////
+/// Commit Message Formats///
+/////////////////////////////
+
+<type> : <subject>
+<BLANK LINE>
+
+<body>
+<BLANK LINE>
+<footer>
+
+Outline: 
+<type> is one of: 
+    feat: new feature
+    fix: bug fix
+    docs: Documentation only changes
+    style: Changes that do not affect the meaning
+    of the code (white-space, formatting, missing semi-colons,
+    etc)
+    refactor: A code change that neither fixes a bug nor adds
+    a feature
+    perf: A code change that improves performance
+    test: Adding missing test
+    build: Changes to the build/compilation/packaging
+    process or auxiliary: tools such as documentation
+    generation
+    ci: Changes in the continuous integration/delivery
+    setup
+
+<Subject> line should contain a succinct description
+of the change. 
+    a) Use imperative present tense: "change" not "changed"
+       nor "changes";
+    b) Do not capitalize first letter;
+    c) No dot (.) at the end;
+
+<body> (Optional) should includea short summary of what has been
+       changed and why.
+
+<footer> (Optional) For this you can include if it:
+         a) Closes #Task-ID - if task is closed with this commit,
+            then it would be nice to mention in message. If there
+            is more than one task that was closed - separate #ID by comma.
+         b) Breaks <description> - if something was broken,
+            it should be mentioned.
+         c) Removes <list of removed items> - mention
+            if something was removed on purpose.
+
+Example: 
+    refactor: change user api functionality
+
+    Due recent DB changes - for user creation/update
+    new fields was
+    - user hobby
+    - user rating

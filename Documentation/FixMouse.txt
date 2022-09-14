@@ -1,0 +1,4 @@
+cd /sys/devices/platform/i8042/serio1
+change 
+    refresh rate
+    resync
