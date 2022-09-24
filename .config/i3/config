@@ -183,10 +183,12 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 
 exec_always --no-startup-id /home/wilabeast/.config/polybar/launch.sh
-exec /home/wilabeast/Scripts/slideshow.sh
+# exec /home/wilabeast/Scripts/slideshow.sh
 for_window [class="^.*"] border pixel 0 
 gaps inner 10
 gaps outer 25
+
+bindsym $mod+Shift+p exec /home/wilabeast/Scripts/Screenshots.sh
 
 #Keybinding for apps on desktop
 bindsym $mod+Shift+b exec brave
@@ -198,4 +200,4 @@ bindsym $mod+Shift+i exec idea
 bindsym $mod+Shift+h exec nm-applet
 bindsym $mod+Shift+v exec virt-manager
 bindsym $mod+Shift+m exec ~/Scripts/multimonitor.sh
-bindsym $mod+Shift+w exec ~/Scripts/slideshow.sh
+bindsym $mod+Shift+w exec ~/Scripts/win.sh

@@ -123,12 +123,16 @@ function _update_ps1() {
 if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
     PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 fi
-alias tmux="TERM=screen-256color-bce tmux"
 alias config='/usr/bin/git/ --git-dir=/home/wilabeast/.cfg/ --work-tree=/home/wilabeast'
 alias v=vim
 alias config='/usr/bin/git --git-dir=/home/wilabeast/.cfg/ --work-tree=/home/wilabeast'
 alias config='/usr/bin/git --git-dir=/home/wilabeast/.cfg/ --work-tree=/home/wilabeast'
 
+# alias for running bash scripts.
+# Note: these commands are not able to run inside the Script folder.
 alias update='source ./Scripts/update.sh'
 alias wifi='source ./Scripts/wifi_connect.sh'
 alias net='source ./Scripts/default_network.sh'
+alias tstart='source ./Scripts/tmux_start.sh'
+alias tend='source ./Scripts/tmux_end.sh'
+alias tls='tmux ls'
