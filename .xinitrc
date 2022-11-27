@@ -47,10 +47,15 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  done
  unset f
 fi
+
 twm &
 xclock -geometry 50x50-1+1 &
 xterm -geometry 80x50+494+51 &
 xterm -geometry 80x20+494-0 &
-picom &
-/home/wilabeast/Scripts/slideshow.sh &
-exec i3
+
+if [[ $(xrandr | awk '/HDMI-1/ {print $2}') == "connected" ]]; then
+    xrandr --output "HDMI-1" --left-of "LVDS-1"
+    exec i3
+else 
+    exec i3
+fi
