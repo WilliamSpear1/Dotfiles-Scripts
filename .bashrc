@@ -125,8 +125,6 @@ if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
 fi
 alias config='/usr/bin/git/ --git-dir=/home/wilabeast/.cfg/ --work-tree=/home/wilabeast'
 alias v=vim
-alias config='/usr/bin/git --git-dir=/home/wilabeast/.cfg/ --work-tree=/home/wilabeast'
-alias config='/usr/bin/git --git-dir=/home/wilabeast/.cfg/ --work-tree=/home/wilabeast'
 
 # alias for running bash scripts.
 # Note: these commands are not able to run inside the Script folder.
