@@ -7,7 +7,7 @@ from watchdog.observers import Observer
 from watchdog.events    import FileSystemEventHandler
 
 source_directory            = "/home/wilabeast/Downloads"
-destination_directory_image = "/home/wilabeast/Wallpapers"
+destination_directory_image = "/home/wilabeast/.SexyWallpapers"
 destination_directory_video = "/home/wilabeast/Videos"
 
 logging.basicConfig(
@@ -15,9 +15,6 @@ logging.basicConfig(
         level=logging.DEBUG, 
         format='[%(asctime)s]:%(message)s'
 )
-
-# TODO: When a file already exists delete the file in Downloads, then move that file
-# TODO: to Videos.
 
 def move_video(destination, entry, name):
     file_exists = os.path.exists(destination + '/' + name)

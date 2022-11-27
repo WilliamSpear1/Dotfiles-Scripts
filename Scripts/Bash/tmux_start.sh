@@ -4,6 +4,9 @@
 # 2 is the file descriptor of stderr and this redirects it to /dev/null.
 # Basically suppressing out error messages.
 
+##########################
+#       functions        #
+##########################
 CreateTmux(){
     tmux new-session -s $1 
 }
@@ -20,5 +23,8 @@ CheckSession(){
     fi
 }
 
+##########################
+#       main             #
+##########################
 # Check if session is already up.
 CheckSession "$1"
