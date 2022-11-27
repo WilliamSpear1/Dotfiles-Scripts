@@ -25,6 +25,7 @@ set incsearch
 set linebreak
 
 set colorcolumn=80
+
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 call plug#begin('~/.vim/plugged')
 Plug 'junegunn/vim-easy-align'                                                                                                      
@@ -46,8 +47,6 @@ Plug 'sudar/vim-arduino-syntax'
 call plug#end()
 
 colorscheme nord 
-set background=dark
-
 "mapping
 let mapleader="," "leader is comma
 
