@@ -128,9 +128,9 @@ alias v=vim
 
 # alias for running bash scripts.
 # Note: these commands are not able to run inside the Script folder.
-alias update='source ./Scripts/update.sh'
-alias wifi='source ./Scripts/wifi_connect.sh'
-alias net='source ./Scripts/default_network.sh'
-alias tstart='source ./Scripts/tmux_start.sh'
-alias tend='source ./Scripts/tmux_end.sh'
+alias update='source ./Scripts/Bash/update.sh'
+alias wifi='source ./Scripts/Bash/wifi_connect.sh'
+alias net='source ./Scripts/Bash/default_network.sh'
+alias tstart='source ./Scripts/Bash/tmux_start.sh'
+alias tend='source ./Scripts/Bash/tmux_end.sh'
 alias tls='tmux ls'
