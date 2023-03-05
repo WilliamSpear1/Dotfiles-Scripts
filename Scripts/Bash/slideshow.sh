@@ -5,16 +5,15 @@
 #       Variables        #
 ##########################
 directory=/home/wilabeast/.SexyWallpapers
-log="/home/wilabeast/Logs/slideshow.logs"
+#directory=/home/wilabeast/Wallpapers
+log="/var/log/slideshow.logs"
 time="$(date +"[%Y-%m-%d %H:%M:%S]")"
 
 ##########################
 #       functions        #
 ##########################
 wallpaper_display(){
-    echo "$time:Starting the wallpapaer_display function" >> $log 
     feh --randomize --recursive --no-fehbg --bg-fill $directory
-    echo "$time:Ending of the wallpaper_display function" >> $log 
 }
 
 check_i3(){
@@ -34,6 +33,9 @@ if [ $? -eq 0 ]; then
     echo "$time:i3wm not running ending script..." >> $log 
     exit 0
 else
-    wallpaper_display
-    echo "$time:ending slideshow.sh script..." >> $log 
+    echo "$time:running slideshow.sh script..." >> $log 
+    while true; do
+        wallpaper_display
+        sleep 5m
+    done
 fi

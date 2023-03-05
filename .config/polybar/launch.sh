@@ -10,4 +10,9 @@ killall -q polybar
 polybar top 2>&1 | tee -a /tmp/polybar.log & disown
 polybar bottom 2>&1 | tee -a /tmp/polybar.log & disown
 
+if [[ $(xrandr -q | grep 'HDMI-1 connected') ]]; then
+    polybar external &
+fi
+
 echo "Polybar launched..."
+

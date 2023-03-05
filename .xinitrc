@@ -50,8 +50,6 @@ fi
 
 twm &
 xclock -geometry 50x50-1+1 &
-xterm -geometry 80x50+494+51 &
-xterm -geometry 80x20+494-0 &
 
 if [[ $(xrandr | awk '/HDMI-1/ {print $2}') == "connected" ]]; then
     xrandr --output "HDMI-1" --left-of "LVDS-1"

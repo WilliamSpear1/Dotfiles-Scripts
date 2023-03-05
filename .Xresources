@@ -44,7 +44,10 @@
 !-------------------------------------------------------
 !         General Settings                             !
 !-------------------------------------------------------
-URxvt.font:         xft:DejavuSansMono:style=Large:antialias=true:minspace=False:size=16
+URxvt.font:         xft:Dejavu Sans Mono for Powerline:style=Large:antialias=true:minspace=False:size=16
+!URxvt.font:         xft:fontawesome:style=Regular:antialias=true:minspace=False:size=16
+!URxvt.font: xft:DejaVuSansMono Nerd Font:pixelsize=12
+!URxvt.font:         xft:DejavuSansMono:size=16
 URxvt.saveLines:    2000
 URxvt.urgentOnBell: False
 URxvt.cursorBlink:  True
@@ -55,10 +58,10 @@ URxvt.shading:      20
 !-------------------------------------------------------
 !         Extensions                                   !
 !-------------------------------------------------------
-URxvt.perl-ext-common: default,resize-font,url-select
+URxvt.perl-ext-common: default,resize-font,url-select,
 URxvt.colorUL:         #4682B4
 
-URxvt.perl-ext-common: ...,selection-to-clipboard,...
+!URxvt.perl-ext-common: ...,selection-to-clipboard,...
 URxvt.clipboard.autocopy: true
 
 Urxvt.keysym.M-c: perl:clipboard:copy
@@ -68,11 +71,11 @@ URxvt.keysym-M-u:           perl:url-select:select_next
 URxvt.url-select.lanucher:  /usr/bin/xdg-open
 URxvt.url-select.underline: true
 
-URxvt.resize-font.step:  2
-URxvt.keysym.C-minus:    resize-font:smaller
-URxvt.keysym.C-plus:     resize-font:bigger
+URxvt.keysym.C-Down:    resize-font:smaller
+URxvt.keysym.C-Up:     resize-font:bigger
 URxvt.keysym.C-equal:    resize-font:reset
 URxvt.keysym.C-question: resize-font:show
+URxvt.resize-font.step:  2
 
 URxvt.url-laucher:    /usr/bin/xdg-open
 URxvt.matcher.button: 1

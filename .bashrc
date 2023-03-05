@@ -116,6 +116,22 @@ if ! shopt -oq posix; then
   fi
 fi
 neofetch
+alias config='/usr/bin/git/ --git-dir=/home/wilabeast/.cfg/ --work-tree=/home/wilabeast'
+alias v=vim
+
+# alias for running bash scripts.
+alias update='source /home/wilabeast/Scripts/Bash/update.sh'
+alias wifi='source /home/wilabeast/Scripts/Bash/wifi_connect.sh'
+alias net='source /home/wilabeast/Scripts/Bash/default_network.sh'
+alias tstart='source /home/wilabeast/Scripts/Bash/tmux_start.sh'
+alias tend='source /home/wilabeast/Scripts/Bash/tmux_end.sh'
+alias tls='tmux ls'
+alias server='source /home/wilabeast/Scripts/Bash/ssh_connect.sh'
+alias video='source /home/wilabeast/Scripts/Bash/mount.sh'
+
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk
+export PATH=$PATH:$JAVA_HOME
+
 function _update_ps1() {
     PS1=$(powerline-shell $?)
 }
@@ -123,14 +139,13 @@ function _update_ps1() {
 if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
     PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 fi
-alias config='/usr/bin/git/ --git-dir=/home/wilabeast/.cfg/ --work-tree=/home/wilabeast'
-alias v=vim
 
-# alias for running bash scripts.
-# Note: these commands are not able to run inside the Script folder.
-alias update='source ./Scripts/Bash/update.sh'
-alias wifi='source ./Scripts/Bash/wifi_connect.sh'
-alias net='source ./Scripts/Bash/default_network.sh'
-alias tstart='source ./Scripts/Bash/tmux_start.sh'
-alias tend='source ./Scripts/Bash/tmux_end.sh'
-alias tls='tmux ls'
+#powerline-daemon -q 
+#POWERLINE_BASH_CONTINUATION=1 
+#POWERLINE_BASH_SELECT=1 
+#. /usr/share/powerline/bindings/bash/powerline.sh
+
+if command -v tmux &> /dev/null && [ -z "$TMUX" ] && xset q &>/dev/null;
+    then
+        tmux attach -t default || tmux new -s default
+fi

@@ -188,18 +188,18 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 exec_always --no-startup-id /home/wilabeast/.config/polybar/launch.sh
 
-# exec_always --no-startup-id /home/wilabeast/Scripts/Bash/slideshow.sh &
+exec_always --no-startup-id /home/wilabeast/Scripts/Bash/slideshow.sh &
 
-exec_always --no-startup-id picom --experimental-backends -b &
+exec_always --no-startup-id picom --experimental-backends -b
 
 for_window [class="^.*"] border pixel 0 
 gaps inner 10
 gaps outer 25
 
-
 #sleep modes for the system.
-exec --no-startup-id xidlehook --not-when-fullscreen --not-when-audio --timer 60 "betterlockscreen -l dim" '' 
-exec --no-startup-id xidlehook --not-when-fullscreen --not-when-audio --timer 360 "betterlockscreen -s" ''
+#exec --no-startup-id xidlehook --not-when-fullscreen --not-when-audio --timer 60 "betterlockscreen -l dim" '' 
+# Getting rid of sleep mode for now because cronjobs aren't running while asleep.
+# exec --no-startup-id xidlehook --not-when-fullscreen --not-when-audio --timer 360 "betterlockscreen -s" ''
 
 #Keybinding for apps on desktop.
 bindsym $mod+Shift+p exec /home/wilabeast/Scripts/Bash/Screenshots.sh
