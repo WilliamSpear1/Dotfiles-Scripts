@@ -116,18 +116,9 @@ if ! shopt -oq posix; then
   fi
 fi
 neofetch
-alias config='/usr/bin/git/ --git-dir=/home/wilabeast/.cfg/ --work-tree=/home/wilabeast'
+alias config='/usr/bin/git/ --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias v=vim
 
-# alias for running bash scripts.
-alias update='source /home/wilabeast/Scripts/Bash/update.sh'
-alias wifi='source /home/wilabeast/Scripts/Bash/wifi_connect.sh'
-alias net='source /home/wilabeast/Scripts/Bash/default_network.sh'
-alias tstart='source /home/wilabeast/Scripts/Bash/tmux_start.sh'
-alias tend='source /home/wilabeast/Scripts/Bash/tmux_end.sh'
-alias tls='tmux ls'
-alias server='source /home/wilabeast/Scripts/Bash/ssh_connect.sh'
-alias video='source /home/wilabeast/Scripts/Bash/mount.sh'
 
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk
 export PATH=$PATH:$JAVA_HOME
@@ -149,3 +140,25 @@ if command -v tmux &> /dev/null && [ -z "$TMUX" ] && xset q &>/dev/null;
     then
         tmux attach -t default || tmux new -s default
 fi
+
+if  pgrep -x "i3" > /dev/null 
+then  
+    exec fish
+fi
+
+##################
+# Aliases        #
+##################
+alias update='source /home/wilabeast/Scripts/Bash/update.sh'
+alias wifi='source /home/wilabeast/Scripts/Bash/wifi_connect.sh'
+alias net='source /home/wilabeast/Scripts/Bash/default_network.sh'
+alias tstart='source /home/wilabeast/Scripts/Bash/tmux_start.sh'
+alias tend='source /home/wilabeast/Scripts/Bash/tmux_end.sh'
+alias tls='tmux ls'
+alias gondolin='ssh gondolin'
+alias video='source /home/wilabeast/Scripts/Bash/mount.sh'
+alias gb='git branch'
+alias gp='git pull'
+alias gc='git checkout'
+alias gs='git status'
+alias gst='git stash'
