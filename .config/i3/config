@@ -53,8 +53,6 @@ bindsym $mod+Shift+Return exec urxvt
 # kill focused window
 bindsym $mod+Shift+q kill
 
-# start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run -l 20
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -191,7 +189,8 @@ exec_always --no-startup-id /home/wilabeast/.config/polybar/launch.sh
  exec_always --no-startup-id /home/wilabeast/Scripts/Bash/slideshow.sh &
 #exec_always --no-startup-id feh --randomize --recursive --no-fehbg --bg-fill /home/wilabeast/Wallpapers
 
-exec_always --no-startup-id picom --experimental-backends -b
+exec_always --no-startup-id picom -b
+exec_always --no-startup-id dunst & 
 
 for_window [class="^.*"] border pixel 0 
 gaps inner 10
@@ -214,3 +213,4 @@ bindsym $mod+Shift+h exec nm-applet
 bindsym $mod+Shift+v exec virt-manager
 bindsym $mod+Shift+m exec ~/Scripts/Bash/multimonitor.sh
 bindsym $mod+Shift+O exec betterlockscreen -l dim
+bindsym $mod+d       exec rofi -show drun 

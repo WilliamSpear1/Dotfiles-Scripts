@@ -1,6 +1,6 @@
 #!/bin/bash
-
-selected=$(printf "Shutdown\nRestart\nSuspend\nHibernate" | rofi -dmenu -i "Power Options")
+dir="$HOME/.config/rofi/powermenu.rasi"
+selected=$(printf "Shutdown\nRestart\nSuspend\nHibernate" | rofi -dmenu -i -theme $dir "Power Options")
 
 case "$selected" in
     "Shutdown")
