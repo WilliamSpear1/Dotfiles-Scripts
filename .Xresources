@@ -44,7 +44,7 @@
 !-------------------------------------------------------
 !         General Settings                             !
 !-------------------------------------------------------
-URxvt.font:         xft:Dejavu Sans Mono for Powerline:style=Large:antialias=true:minspace=False:size=16
+URxvt.font:         xft:Dejavu Sans Mono:style=Large:antialias=true:minspace=False:size=16
 !URxvt.font:         xft:fontawesome:style=Regular:antialias=true:minspace=False:size=16
 !URxvt.font: xft:DejaVuSansMono Nerd Font:pixelsize=12
 !URxvt.font:         xft:DejavuSansMono:size=16
@@ -54,7 +54,7 @@ URxvt.cursorBlink:  True
 URxvt.scrollBar:    False
 URxvt.transparent:  True
 URxvt.shading:      20
-
+URxvt.letterSpace: -1
 !-------------------------------------------------------
 !         Extensions                                   !
 !-------------------------------------------------------
