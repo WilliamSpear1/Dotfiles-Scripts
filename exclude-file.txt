@@ -1,0 +1,9 @@
+.cache/*
+sys/*
+proc/*
+run/*
+var/log/*
+/lost+found
+tmp/*
+mnt/*
+media/*
