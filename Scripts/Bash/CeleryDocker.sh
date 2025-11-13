@@ -1,0 +1,1 @@
+docker run -e CELERY_BROKER_URL=amqp://guest:qmdB1BZK^vd@192.168.50.182:5672 -e CELERY_RESULT_BACKEND=redis://192.168.50.182:6379/0 registry.spearmanwm.dev/url_processor celery -A tasks worker --loglevel=INFO

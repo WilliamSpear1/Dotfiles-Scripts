@@ -1,8 +1,8 @@
 #!/bin/sh
 CopyOver() {
-    echo "Copying $wallpaper Over..."
+    echo Copying $wallpaper Over...
     cp -r ~/Wallpapers/$wallpaper ~/Mountain-Wallpapers/$wallpaper
-    echo "Finished Copying"
+    echo Finished Copying
 }
 
 i=1

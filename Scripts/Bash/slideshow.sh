@@ -5,8 +5,8 @@
 ##########################
 #directory=/home/wilabeast/.SexyWallpapers
 directory=/home/wilabeast/Wallpapers
-log="/var/log/slideshow.log"
-time="$(date +"[%Y-%m-%d %H:%M:%S]")"
+log=/var/log/slideshow.log
+time=$(date +[%Y-%m-%d %H:%M:%S])
 
 ##########################
 #       functions        #
@@ -16,7 +16,7 @@ wallpaper_display(){
 }
 
 check_i3(){
-    if  pgrep -x "i3" > /dev/null 
+    if  pgrep -x i3 > /dev/null 
     then  
         return 1
     else
@@ -29,7 +29,7 @@ check_i3(){
 ##########################
 check_i3 
 if [ $? -eq 0 ]; then
-    echo "$time:i3wm not running ending script..." >> $log 
+    echo $time:i3wm not running ending script... >> $log 
     exit 0
 else
     while true; do

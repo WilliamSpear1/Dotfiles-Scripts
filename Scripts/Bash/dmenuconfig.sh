@@ -1,2 +1,2 @@
 #!/bin/sh
-echo "disconnect\t" | dmenu
+echo disconnect\t | dmenu

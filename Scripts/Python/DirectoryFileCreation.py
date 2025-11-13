@@ -5,7 +5,7 @@ import logging
 from watchdog.observers import Observer
 from watchdog.events    import FileSystemEventHandler
 
-logging.basicConfig(filename='/home/wilabeast/Logs/DateFiles.logs', level=logging.DEBUG, format='[%(asctime)s]:%(message)s')
+logging.basicConfig(filename='/Logs/DateFiles.logs', level=logging.DEBUG, format='[%(asctime)s]:%(message)s')
 
 def rename(path, name, newname):
     try:
@@ -39,6 +39,6 @@ def scan_dir(path):
 
 if __name__ == '__main__':
     logging.info ('Start of program')
-    wallpaper_dir = '/home/wilabeast/.SexyWallpapers'
+    wallpaper_dir = '/Wallpapers'
     scan_dir(wallpaper_dir)
     logging.info ('End of program')

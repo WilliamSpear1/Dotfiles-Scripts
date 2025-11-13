@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/home/wilabeast/PycharmProjects/Selenium/bg_run.sh", line 2, in <module>
+    set -e
+         ^
+NameError: name 'e' is not defined

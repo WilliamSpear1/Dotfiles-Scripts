@@ -19,7 +19,7 @@ CheckSession(){
     if [ $? == 0 ]; then
         tmux attach-session -t $1 
     else
-        CreateTmux "$1"
+        CreateTmux $1
     fi
 }
 
@@ -27,4 +27,4 @@ CheckSession(){
 #       main             #
 ##########################
 # Check if session is already up.
-CheckSession "$1"
+CheckSession $1

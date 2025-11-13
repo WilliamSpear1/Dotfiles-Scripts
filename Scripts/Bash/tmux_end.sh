@@ -11,5 +11,5 @@ EndTmux(){
 #       main             #
 ##########################
 # file/session name
-EndTmux "$1"
+EndTmux $1
 tls
