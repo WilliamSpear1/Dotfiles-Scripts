@@ -24,3 +24,18 @@ alias l='ls -CF'
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 alias angmar="ssh angmar"
+alias watch="source /home/wilabeast/Scripts/Bash/Watch.sh"
+alias backup="source /home/wilabeast/Scripts/Bash/BackUp.sh"
+alias upload="source /home/wilabeast/Scripts/Bash/Optimized_Upload.sh"
+alias nfs="source /home/wilabeast/Scripts/Bash/NFS.sh"
+alias vq="source /home/wilabeast/Scripts/Bash/VideoQuality.sh"
+alias search="source /home/wilabeast/Scripts/Bash/Search.sh"
+alias ydl="python /home/wilabeast/PycharmProjects/Selenium/main.py"
+alias download="nohup python /home/wilabeast/PycharmProjects/Selenium/bg_run.sh &"
+alias trim="source /home/wilabeast/Scripts/Bash/Trim.sh"
+alias db="source /home/wilabeast/Scripts/Bash/docker_build.sh"
+alias dt="source /home/wilabeast/Scripts/Bash/docker_tag.sh"
+alias dp="source /home/wilabeast/Scripts/Bash/docker_push.sh"
+alias dl="source /home/wilabeast/Scripts/Bash/docker_pull.sh"
+alias celery="source /home/wilabeast/Scripts/Bash/CeleryDocker.sh"
+alias send="source /home/wilabeast/Scripts/Bash/Curl.sh"

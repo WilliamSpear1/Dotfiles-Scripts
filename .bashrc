@@ -112,9 +112,18 @@ function _update_ps1() {
     PS1=$(powerline-shell $?)
 }
 
+function _update_registry() {
+    REGISTRY=registry.spearmanwm.dev
+}
+
 if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
     PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 fi
+
+if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_registry ]]; then
+    PROMPT_COMMAND="_update_registry; $PROMPT_COMMAND"
+fi
+
 
 #powerline-daemon -q 
 #POWERLINE_BASH_CONTINUATION=1 
