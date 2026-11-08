@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # Method
-docker_build() {
+DockerBuild() {
     docker build -t $REGISTRY/$image_name .
 }
 
-print_out() {
+PrintOut() {
     #Print out of variables
     echo ----------------------------------
     echo Image Name: $image_name
@@ -17,5 +17,5 @@ print_out() {
 image_name=$1
 
 # Method Call
-print_out
-docker_build $image_name
+PrintOut
+DockerBuild $image_name
