@@ -105,8 +105,8 @@ fi
 neofetch
 
 
-export JAVA_HOME=/usr/lib/jvm/java-11-openjdk
-export PATH=$PATH:$JAVA_HOME
+export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
+export PATH=$JAVA_HOME/bin:$PATH
 
 function _update_ps1() {
     PS1=$(powerline-shell $?)
@@ -139,3 +139,6 @@ fi
 #then  
 #    exec fish
 #fi
+
+# Created by `pipx` on 2026-03-13 18:52:09
+export PATH="$PATH:/home/wilabeast/.local/bin"

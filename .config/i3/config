@@ -196,11 +196,8 @@ for_window [class="^.*"] border pixel 0
 gaps inner 10
 gaps outer 25
 
-#sleep modes for the system.
-exec --no-startup-id xidlehook --not-when-fullscreen --not-when-audio --timer 60 "betterlockscreen -l dim" '' 
-# Getting rid of sleep mode for now because cronjobs aren't running while asleep.
-# exec --no-startup-id xidlehook --not-when-fullscreen --not-when-audio --timer 360 "betterlockscreen -s" ''
-
+exec --no-startup-id xset s off -dpms
+exec --no-startup-id betterlockscreen -u ~/LockScreen_Wallpapers/
 #Keybinding for apps on desktop.
 bindsym $mod+Shift+p exec /home/wilabeast/Scripts/Bash/Screenshots.sh
 bindsym $mod+Shift+b exec brave
@@ -212,5 +209,5 @@ bindsym $mod+Shift+i exec idea
 bindsym $mod+Shift+h exec nm-applet
 bindsym $mod+Shift+v exec virt-manager
 bindsym $mod+Shift+m exec ~/Scripts/Bash/multimonitor.sh
-bindsym $mod+Shift+O exec betterlockscreen -l dim
+bindsym $mod+Shift+o exec --no-startup-id betterlockscreen -l
 bindsym $mod+d       exec rofi -show drun 
