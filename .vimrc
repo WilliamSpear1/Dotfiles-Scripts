@@ -37,6 +37,22 @@ set wildmode=list:longest
 set wildignore=*.jpg,*.png,*.pdf,*.gif,*.img
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 inoremap jk <esc>
+let g:mapleader=" "
+nnoremap <leader>J :tabprevious<CR>
+nnoremap <leader>K :tabnext<CR>
+nnoremap <leader>C :tabclose<CR>
+nnoremap <leader>V :action SplitVertically<CR>
+nnoremap <leader>H :action SplitHorizontally<CR>
+nnoremap <leader>U :action Unsplit<CR>
+nnoremap <leader>M :action MoveEditorToOppositeTabGroup<CR>
+nnoremap <leader>EN :action EditSourceInNewWindow<CR>
+nnoremap <leader>N :action NextWindow<CR>
+nnoremap <leader>Q :action CloseContent<CR>
+nnoremap <leader>QA :action CloseAllEditors<CR>
+nnoremap <leader>gc :action GottoClass<CR>
+nnoremap <leader>gd :action GotToDeclaration<CR>
+nnoremap <leader>gt :action GottoTest<CR>
+nnoremap <leader>gf :action FindUsages<CR>
 " set ideajoin
 "}}} ----------------------------------------------------------------------
 
